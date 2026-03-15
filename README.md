@@ -1,7 +1,7 @@
-# libwine - A C++ library
+# libwine
 
-The `libwine` C++ library provides <SUMMARY-OF-FUNCTIONALITY>.
-
+The `libwine` C++ library provides utilities for working with Wine environments
+and Wine version information.
 
 ## Usage
 
@@ -9,33 +9,15 @@ To start using `libwine` in your project, add the following `depends`
 value to your `manifest`, adjusting the version constraint as appropriate:
 
 ```
-depends: libwine ^<VERSION>
+depends: libwine ^0.1.0
 ```
 
 Then import the library in your `buildfile`:
 
 ```
-import libs = libwine%lib{<TARGET>}
+import libs = libwine%lib{wine}
 ```
 
+## License
 
-## Importable targets
-
-This package provides the following importable targets:
-
-```
-lib{<TARGET>}
-```
-
-<DESCRIPTION-OF-IMPORTABLE-TARGETS>
-
-
-## Configuration variables
-
-This package provides the following configuration variables:
-
-```
-[bool] config.libwine.<VARIABLE> ?= false
-```
-
-<DESCRIPTION-OF-CONFIG-VARIABLES>
+`libwine` is licensed under the `GNU General Public License v3.0 or later`.
