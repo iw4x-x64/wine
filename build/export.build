@@ -1,0 +1,6 @@
+$out_root/
+{
+  include libwine/
+}
+
+export $out_root/libwine/$import.target
